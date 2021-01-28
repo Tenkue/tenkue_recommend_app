@@ -1,6 +1,8 @@
 # CRUD 処理の見本
 
-共同開発で各自に実装していただく、オススメ投稿機能の CRUD 処理について解説します。
+共同開発で各自に実装していただく，オススメ投稿機能の CRUD 処理について解説します。
+
+この見本では Shop のオススメ投稿機能を実装していますが, 各自担当のタスクに置き換えて CRUD 処理を全て実装して下さい。
 
 ## CRUD 処理
 
@@ -17,7 +19,7 @@ Rails.application.routes.draw do
 end
 ```
 
-`resources :shops` で作成されるルーティングは、ターミナルから `rails routes` を実行すれば確認ができます。
+`resources :shops` で作成されるルーティングは，ターミナルから `rails routes` を実行すれば確認ができます。
 
 ただ，これをそのまま実行すると他のルーティングがたくさん含まれてしまいます。例えば次を実行すれば `shops` が含まれる行のみを表示できます。
 
@@ -406,8 +408,9 @@ git push origin HEAD
 
 # GitHubでプルリク
 # GitHubでコードの差分を確認
-# 共同開発の場合はここでレビュー依頼を出す
-# （共同開発の場合はLGTMを受けてから）GitHubでマージ
+# Slackのチームチャンネルでレビュー依頼を出す
+# （メンバーとメンターから Approve コメントを受けてから）GitHubでマージ
+
 
 git switch master
 git pull origin HEAD

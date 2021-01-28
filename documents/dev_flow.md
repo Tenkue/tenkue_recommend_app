@@ -6,7 +6,7 @@
 
 メンバー 3 名で 1 つずつ担当していただきます。
 
-各メンバーは、合計３回プルリクを出し、メンバーとメンターからレビューを受け、マージしていただきます。
+各メンバーは，合計３回プルリクを出し，メンバーとメンターからレビューを受け，マージしていただきます。
 
 1. モデルとコントローラーを作成
 2. CRUD 処理を実装
@@ -47,9 +47,9 @@ CRUD 処理を実装する前にモデルとコントローラーを作成しま
 
 各自担当のタスクに応じた教材を参考に, モデルとコントローラーを作成して下さい。
 
-- [Book](/documents/book.md)
-- [Music](/documents/music.md)
-- [Movie](/documents/movie.md)
+- [Book の開発手順](/documents/book.md)
+- [Music の開発手順](/documents/music.md)
+- [Movie の開発手順](/documents/movie.md)
 
 実装が完了したら Github にプッシュしてプルリクを作成して下さい。（`5. プッシュ・プルリクの流れ` を参照）
 
@@ -60,7 +60,18 @@ CRUD 処理を実装する前にモデルとコントローラーを作成しま
 下記の教材を参考に, CRUD 処理を実装して下さい。
 教材では Shop のオススメ投稿機能を実装していますが, 各自担当のタスクに置き換えて CRUD 処理を全て実装して下さい。
 
-- [Shop](/documents/shop.md)
+作業に入る前に，ブランチを切っておきましょう。
+
+ターミナルで以下のコマンドを実行して下さい。
+（担当タスクに応じたものを 1 つだけ選んで実行して下さい）
+
+```zsh
+git switch -c feature/crud-for-books
+git switch -c feature/crud-for-musics
+git switch -c feature/crud-for-movies
+```
+
+- [Shop の開発手順](/documents/shop.md)
 
 - Github にプッシュする前に Rails サーバーを起動して, 動作確認を行いましょう。
 - CRUD 処理の実装が完了したら Github にプッシュしてプルリクを作成して下さい。

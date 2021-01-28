@@ -15,7 +15,7 @@ git switch -c feature/apply-bootstrap-music-style
 git switch -c feature/apply-bootstrap-movie-style
 ```
 
-おおよそ次の手順になりますが，まずは自分で実装してみることをお勧めします。
+おおよそ次の手順になります。
 
 - 各ページを中央寄せにする
 - フォームは Bootstrap の [Forms](https://getbootstrap.jp/docs/4.5/components/forms/) を利用
@@ -23,11 +23,17 @@ git switch -c feature/apply-bootstrap-movie-style
 - 一覧ページは Bootstrap の [Tables](https://getbootstrap.jp/docs/4.5/content/tables/) を利用
 - `link_to` の部分は，Bootstrap の [Buttons](https://getbootstrap.jp/docs/4.5/components/buttons/) を利用
 
+【補足】以下はあくまで一例です。各自，好きなスタイルを付けていただいて OK です。
+
 ### 新規投稿機能の Bootstrap の フォーム を利用
 
 【参考】[Bootstrap Forms](https://getbootstrap.jp/docs/4.5/components/forms/)
 
+【参考】[Bootstrap Buttons](https://getbootstrap.jp/docs/4.5/components/buttons/)
+
 `form-group`, `form-control` を適切に入れるだけでフォームのスタイルが整います。
+
+`btn btn-primary` などを適切に入れるだけでボタンのスタイルが整います。
 
 - `app/views/shops/new.html.erb`
 
@@ -146,8 +152,9 @@ git push origin HEAD
 
 # GitHubでプルリク
 # GitHubでコードの差分を確認
-# 共同開発の場合はここでレビュー依頼を出す
-# （共同開発の場合はLGTMを受けてから）GitHubでマージ
+# Slackのチームチャンネルでレビュー依頼を出す
+# （メンバーとメンターから Approve コメントを受けてから）GitHubでマージ
+
 
 git switch master
 git pull origin HEAD
