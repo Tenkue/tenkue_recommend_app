@@ -16,6 +16,16 @@
 
 @import "bootstrap/scss/bootstrap";
 
+body {
+  padding-top: 56px;
+}
+
+.base-container {
+  @extend .container-fluid;
+  max-width: var(--breakpoint-lg);
+  padding: 30px 15px;
+}
+
 .idx-recommends {
   max-width: 1200px;
   margin: 0 auto;
@@ -24,4 +34,18 @@
 .card-container {
   max-width: 368px;
   margin: 16px auto;
+}
+
+th,
+td {
+  vertical-align: middle !important;
+}
+
+.break-word {
+  word-break: break-word;
+}
+
+.new-post-btn {
+  max-width: 200px;
+  margin: 0 auto;
 }
